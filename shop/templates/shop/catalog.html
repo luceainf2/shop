@@ -3,7 +3,7 @@
 {% block title %}Каталог{% endblock %}
 {% block main %}
     <h1 class="text-center">Каталог</h1>
-    <div class="frc mw-1300px gap-3 mx-auto flex-wrap" >
+    <div class="frc mw-1300px gap-3 mx-auto flex-wrap">
         {% for product in products %}
             <div class="mw-300px rounded-3 p-2  " style="box-shadow: 0 0 10px #0004 ">
                 <img class="w-100 rounded-3" src="{{ product.picture.url }}" alt="">
@@ -20,9 +20,9 @@
                             <img width="16px" class="gray-scale" src="{% static 'core/img/star.png' %}" alt="">
                         {% endif %}
                     {% endfor %}
-                <span>{{ product.rating }}</span>
+                    <span>{{ product.rating }}</span>
                 </div>
-            <span class="fs-7 text-secondary">{{ product.description}}</span>
+                <span class="fs-7 text-secondary">{{ product.description }}</span>
             </div>
         {% endfor %}
     </div>
